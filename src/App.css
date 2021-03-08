@@ -1,0 +1,9 @@
+.welcome, .min-height{
+  min-height: 486px;
+}
+.product{
+  min-height: 486px;
+  padding: 0 0 20px 0;
+}
+
+

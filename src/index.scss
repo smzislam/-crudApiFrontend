@@ -1,0 +1,179 @@
+$colorA: #333333;
+$colorB: rgb(114, 34, 241);
+$colorC: White;
+$colorBLight: rgb(199, 166, 252);
+$colorBDark: rgb(30, 5, 71);
+$colorD: #f1f1f1;
+
+
+$max-width:1280px;
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+* {
+    box-sizing: border-box;
+  }
+  .inner-wrapper{
+    position: relative;
+    width: $max-width;
+    margin: auto; 
+    padding: 0 15px;
+    @media (max-width: 800px) {  
+      width: 100%;
+    }
+  }
+section{
+    width: 100%;
+}
+
+//###### header style ######//
+//#########################//
+header{
+  position: relative;
+  background-color: $colorA;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  height: 80px;
+  display: block;
+  transition: top 0.3s;
+  opacity: 0.9; 
+  z-index: 9; 
+  .flex-container{
+    display: flex;
+    justify-content:space-between;
+    .logo{
+      padding-top: 20px;
+      a{
+        color: $colorC;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+    .navbar{
+        padding-top: 5px;
+        margin-right: -15px;
+      a {
+        float: left;
+        display: block;
+        color: $colorC;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      a:hover {
+        background-color: $colorB;
+        color: $colorC;
+      }
+    }
+  }
+}
+
+//###### table style ######//
+//#########################//
+table{
+  width:100%;
+  border:1px solid $colorBLight;
+  border-spacing: 0;
+  tr{
+    th{
+      background-color:$colorB;
+      color: $colorC;
+      padding: 15px 10px;
+      text-align: left;
+    }
+    td{
+      border-top:1px solid $colorBLight;
+      padding: 10px;
+      text-align: left;
+    }
+    &:hover{
+      background-color: $colorBLight;
+    }
+  }
+  
+}
+//###### Form style ######//
+//#########################//
+.form-container{
+  position: relative;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  border-top:1px solid $colorBLight;
+  background-color: $colorD;
+  padding: 10px 100px;
+}
+
+form{
+  width:100%;
+  .form-group{
+    width:100%;
+    padding: 10px 0;
+    label{
+      display: block;
+      font-size: 16px;
+      padding: 5px 0;
+    }
+    input[type=text]{
+      background-color: $colorD;
+      width: 100%;
+      padding: 15px;
+      border: 1px solid $colorB;
+      font-size: 14px;
+      
+      
+      &:focus {
+        border: 1px solid $colorB;
+        background-color: $colorD;
+        border-radius: 0;
+        
+      }
+    }
+    textarea {
+      background-color: $colorD;
+      width: 100%;
+      height: 100px;
+      padding: 15px;
+      border: 1px solid $colorB;
+      font-size: 14px;
+    }
+    input[type=file]{
+      padding: 13px 15px;
+      border: 1px solid $colorB;
+      text-align: center;
+      background-color: $colorD;
+      cursor: pointer;
+    }
+    input[type=submit], input[type=button]{
+      padding: 15px 50px;
+      border: 1px solid $colorB;
+      text-align: center;
+      background-color: $colorB;
+      color:$colorD;
+      cursor: pointer;
+    }
+  }
+}
+
+//###### footer style ######//
+//#########################//
+footer{
+    height: auto;
+    width: 100%;
+    padding:15px;
+    background-color: $colorB;
+    p{
+        color: $colorBLight;
+    }
+    a{
+        color: $colorC;
+        &:hover{
+            color: $colorBLight;
+        }
+    }
+}

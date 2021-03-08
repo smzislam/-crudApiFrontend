@@ -1,13 +1,13 @@
-# crudApiFrontend is created for crudApiBackend
+# crudApiFrontend is a react frontend created for crudApiBackend 
 
-Please see the repository for the backend rest api
+Please see the repository for the backend rest api https://github.com/smzislam/crudApiBackend
 
 
-## befor run the app
+## Befor run the app
 
 npm install
 
-## to run the app
+## To run the app
 
 In the project directory, you can run:
 
